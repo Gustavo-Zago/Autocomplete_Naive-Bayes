@@ -7,12 +7,25 @@
     <title>Google</title>
 </head>
 <body>
-    <div class="container">
-        <img src="{{ url_for('static', filename='img/google_logo.png') }}" alt="Google Logo" class="logo">
+    <header class="navbar">
+        <nav class="menu-links">
+            <a href="#">Images</a>
+            <a href="#">Video</a>
+            <a href="#">News</a>
+            <a href="#">Maps</a>
+            <a href="#">Gmail</a>
+            <a href="#">More</a>
+        </nav>
+        <aside class="nav-links-end">
+            <a href="#" class="btn-signin">Sign in</a>
+        </aside>
+    </header>
+    <main>
+        <img src="{{ url_for('static', filename='img/google_logo.png') }}" id="foto_google" alt="Google Logo">
         <form action="/search" method="get">
-            <input type="text" name="query" placeholder="Search Google..." required>
+            <input type="text" name="query" placeholder="Search Google..." required><br>
             <button type="submit">Search</button>
         </form>
-    </div>
+    </main>
 </body>
 </html>

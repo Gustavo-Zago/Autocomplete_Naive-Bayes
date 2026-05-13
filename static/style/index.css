@@ -1,0 +1,44 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 1rem 2rem;            
+}
+
+
+.menu-links {
+    display: flex;
+    gap: 1.2rem; 
+}
+
+.menu-links a, .nav-links-end a {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+
+.nav-links-end {
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-signin {
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh; 
+}
+
+#foto_google {
+    width: 20rem; 
+    max-width: 80%; 
+    height: auto;
+}
