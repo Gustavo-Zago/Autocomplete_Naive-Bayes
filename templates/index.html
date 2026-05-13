@@ -17,15 +17,37 @@
             <a href="#">More</a>
         </nav>
         <aside class="nav-links-end">
-            <a href="#" class="btn-signin">Sign in</a>
+            <a href="#">iGoogle | </a>
+            <a href="#">Sign in</a>
         </aside>
     </header>
     <main>
         <img src="{{ url_for('static', filename='img/google_logo.png') }}" id="foto_google" alt="Google Logo">
-        <form action="/search" method="get">
-            <input type="text" name="query" placeholder="Search Google..." required><br>
-            <button type="submit">Search</button>
+        
+        <form action="/search" method="get" class="search-form">
+            <article class="search-row">
+                <input class="txt-search" type="text" name="query" required>
+                
+                <section class="side-links">
+                    <a href="#">Advanced Search</a>
+                    <a href="#">Preferences</a>
+                    <a href="#">Language Tools</a>
+                </section>
+            </article>
+
+            <section class="button-row">
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </section>
         </form>
     </main>
+    <footer>
+        <section class="links-footer">
+            <a href="#" class="links-abaixo">Advertising Programs</a>
+            <a href="#" class="links-abaixo">Business Solutions</a>
+            <a href="#" class="links-abaixo">About Google</a>
+        </section>
+        <p class="direitos">©2007 Google</p>
+    </footer>
 </body>
 </html>
