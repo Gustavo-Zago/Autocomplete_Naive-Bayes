@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Modelo gerado automaticamente
+backend_bayes/data/modelo.json
+
+# NLTK
+nltk_data/
+
+# Node (pro frontend depois)
+node_modules/
+dist/
+
+# Sistema
+.DS_Store
+Thumbs.db
