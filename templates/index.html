@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+    <title>Google</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav class="menu-links">
+            <a href="#">Images</a>
+            <a href="#">Video</a>
+            <a href="#">News</a>
+            <a href="#">Maps</a>
+            <a href="#">Gmail</a>
+            <a href="#">More</a>
+        </nav>
+        <aside class="nav-links-end">
+            <a href="#">iGoogle | </a>
+            <a href="#">Sign in</a>
+        </aside>
+    </header>
+    <main>
+        <img src="{{ url_for('static', filename='img/google_logo.png') }}" id="foto_google" alt="Google Logo">
+        
+        <form action="/search" method="get" class="search-form">
+            <article class="search-row">
+                <input class="txt-search" type="text" name="query" required>
+                
+                <section class="side-links">
+                    <a href="#">Advanced Search</a>
+                    <a href="#">Preferences</a>
+                    <a href="#">Language Tools</a>
+                </section>
+            </article>
+
+            <section class="button-row">
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <section class="links-footer">
+            <a href="#" class="links-abaixo">Advertising Programs</a>
+            <a href="#" class="links-abaixo">Business Solutions</a>
+            <a href="#" class="links-abaixo">About Google</a>
+        </section>
+        <p class="direitos">©2007 Google</p>
+    </footer>
+</body>
+</html>

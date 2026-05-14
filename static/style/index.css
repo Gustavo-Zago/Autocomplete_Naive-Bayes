@@ -1,0 +1,95 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 1rem 2rem;            
+}
+
+
+.menu-links {
+    display: flex;
+    gap: 1.2rem; 
+}
+
+.menu-links a, .nav-links-end a {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+
+.nav-links-end {
+    display: flex;
+    align-items: center;
+}
+.links-footer {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20vh; 
+    font-size: 0.9rem ;
+}
+.direitos{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.6rem;
+}
+.links-abaixo{
+    margin: 0 8px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh; 
+}
+
+#foto_google {
+    width: 20rem; 
+    max-width: 80%; 
+    height: auto;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.search-row {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    width: fit-content;
+}
+
+
+.txt-search {
+    width: 40vw;       
+    min-width: 300px;  
+    padding: 5px;
+}
+
+
+.side-links {
+    display: flex;
+    flex-direction: column; 
+    font-size: 0.75rem;     
+}
+
+.side-links a {
+    text-decoration: underline;
+    color: #0000CC;
+}
+
+.button-row {
+    display: flex;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border: 1px solid #767676;
+}
